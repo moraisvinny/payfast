@@ -1,5 +1,9 @@
+var logger = require('../servicos/logger');
 module.exports = function (app) {
+    
     app.get("/pagamentos", function (req, res) {
+      
+        logger.info("Rota Principal OK 2");
         res.send("OK");
     });
 
